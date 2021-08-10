@@ -23,4 +23,4 @@ bash$ tagcounter --get ggl
 {'html': 2, 'head': 2, 'meta': 4, 'title': 2, 'script': 18, 'style': 4, 'body': 2, 'div': 24, 'nobr': 4, 'b': 2, 'a': 36, 'u': 2, 'span': 16, 'center': 2, 'br': 5, 'img': 2, 'form': 2, 'table': 2, 'tr': 2, 'td': 6, 'input': 10, 'p': 2}
 ```
 If you launch this program without corresponding parameters, it will be launched in GUI:  
-<img src="./GUI_snapshot.png" width="200" height="200">  
+<img src="./GUI_snapshot.png" width="500" height="500">  
