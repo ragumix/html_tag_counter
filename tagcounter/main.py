@@ -128,11 +128,10 @@ def get_from_db(url):
 
 def check_in_dict(url):
     filename = os.path.join(os.getcwd(), 'synonims.yaml')
-    f = open(filename, 'w+')
-    if not os.path.exists(filename) or len(f.read()) == 0:
-        f.write('ggl: google.com')
-        f.close()
-    with open(filename, "r") as f:
+    with open(filename, 'w+') as f:
+        if (not os.path.exists(filename)) or (len(f.read()) == 0):
+            f.write('ggl: google.com')
+    with open(filename, 'r') as f:
         dict = yaml.load(f, Loader=yaml.FullLoader)
     if url in dict.keys():
         return dict[url]
